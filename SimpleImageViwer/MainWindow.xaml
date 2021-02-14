@@ -1,0 +1,19 @@
+﻿<Window x:Class="SimpleImageViwer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimpleImageViwer"
+        mc:Ignorable="d"
+        Title="SIV" Height="450" Width="800" WindowState="Maximized">
+    <Grid Background="#3D3D3D">
+        <Image x:Name="ImageCanvas" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="auto" Height="auto" MouseLeftButtonDown="Image_MouseLeftButtonDown" MouseWheel="ImageCanvas_MouseWheel" MouseLeftButtonUp="ImageCanvas_MouseLeftButtonUp" MouseMove="ImageCanvas_MouseMove" MouseDown="ImageCanvas_MouseDown" >
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+    </Grid>
+</Window>
